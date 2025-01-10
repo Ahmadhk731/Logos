@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.content{
+    display:none;
+}
+</style>
+</head>
+<body>
+<div class="container">123
+    <div class="content">ABC</div>
+</div>
+<div class="container">123
+    <div class="content">ABC</div>
+</div>
+
+<script type="text/javascript">
+$(".container").hover(function() {
+    $(this).find('.content').slideToggle();
+});
+</script>
+
+</body>
+</html>
